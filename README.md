@@ -1,5 +1,3 @@
-
-```
 # PMM Grafana Alerts
 
 This repository contains Grafana unified alerting rules for monitoring MySQL using PMM (Percona Monitoring and Management).
@@ -141,8 +139,3 @@ SRE / Platform Team
 ## License
 
 MIT License
-
-```
-
-If you want **Terraform-specific**, **PMM-only**, or **runbook-style** README code, say the word and I’ll generate it.
-```
