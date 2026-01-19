@@ -1,0 +1,15 @@
+tasks.register('installSshAndApache', Exec) {
+    group = "infrastructure"
+    description = "Install SSH and Apache on Ubuntu"
+
+    commandLine 'bash', '-c', '''
+        set -e
+        export DEBIAN_FRONTEND=noninteractive
+
+        sudo apt-get update -y
+        sudo apt-get install -y openssh-server apache2
+
+        sudo systemctl enable ssh apache2
+        sudo systemctl restart ssh apache2
+    '''
+}
